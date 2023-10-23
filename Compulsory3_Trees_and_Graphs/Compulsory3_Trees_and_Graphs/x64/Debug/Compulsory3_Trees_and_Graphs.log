@@ -1,4 +1,4 @@
 ﻿  Compulsory3_Trees_and_Graphs.cpp
-E:\Github\Compulsory3_Algorytmer&DataStruktur\Compulsory3_Algorytmer_og_Datastruktur\Compulsory3_Trees_and_Graphs\Compulsory3_Trees_and_Graphs\Compulsory3_Trees_and_Graphs.cpp(52): warning C4715: 'depth': not all control paths return a value
-E:\Github\Compulsory3_Algorytmer&DataStruktur\Compulsory3_Algorytmer_og_Datastruktur\Compulsory3_Trees_and_Graphs\Compulsory3_Trees_and_Graphs\Compulsory3_Trees_and_Graphs.cpp(67): warning C4715: 'size': not all control paths return a value
-  Compulsory3_Trees_and_Graphs.vcxproj -> E:\Github\Compulsory3_Algorytmer&DataStruktur\Compulsory3_Algorytmer_og_Datastruktur\Compulsory3_Trees_and_Graphs\x64\Debug\Compulsory3_Trees_and_Graphs.exe
+C:\Github\Github\Compulsory3_Algorytmer_og_Datastruktur\Compulsory3_Trees_and_Graphs\Compulsory3_Trees_and_Graphs\Tree.h(79): warning C4715: 'Tree::size': not all control paths return a value
+C:\Github\Github\Compulsory3_Algorytmer_og_Datastruktur\Compulsory3_Trees_and_Graphs\Compulsory3_Trees_and_Graphs\Tree.h(64): warning C4715: 'Tree::depth': not all control paths return a value
+  Compulsory3_Trees_and_Graphs.vcxproj -> C:\Github\Github\Compulsory3_Algorytmer_og_Datastruktur\Compulsory3_Trees_and_Graphs\x64\Debug\Compulsory3_Trees_and_Graphs.exe
