@@ -46,14 +46,14 @@ public:
 		}
 	}
 
-	int depth(struct Node* node)
+	int height(struct Node* node)
 	{
 		if (node != nullptr)
 		{
 			int maxDepth = 0;
 			for (Node* child : node->children)
 			{
-				int childDepth = depth(child);
+				int childDepth = height(child);
 				maxDepth = max(maxDepth, childDepth);
 			}
 
@@ -62,6 +62,16 @@ public:
 		}
 		else
 			cout << "is nullptr\n";
+	}
+	int depth(struct Node* node)
+	{
+		int currentDepth = 1;
+		while (node->parent != nullptr)
+		{
+			node = node->parent;
+			currentDepth++;
+		}
+		return currentDepth;
 	}
 	int size(struct Node* node)
 	{
@@ -89,7 +99,6 @@ public:
 	{
 		if (node->parent == nullptr)
 		{
-			cout << "Root\n";
 			return true;
 		}
 		else
@@ -99,7 +108,6 @@ public:
 	{
 		if (leaf->children.empty())
 		{
-			cout << "leaf\n";
 			return true;
 		}
 		else
