@@ -19,13 +19,20 @@ public:
 		newNode->cost = weight; 
 		
 		if(head != nullptr)
-		newNode->adjlist.push_back(head); 
-
+		{
+			newNode->adjlist.push_back(head);
+			head->adjlist.push_back(newNode);
+		}
 		return newNode; 
 	}
 	void returnNodeinf()
 	{
 
+	}
+	void connectEdge(Node* nodeA, Node* nodeB)
+	{
+		nodeA->adjlist.push_back(nodeB); 
+		nodeB->adjlist.push_back(nodeA); 
 	}
 	void adjNodes()
 	{
