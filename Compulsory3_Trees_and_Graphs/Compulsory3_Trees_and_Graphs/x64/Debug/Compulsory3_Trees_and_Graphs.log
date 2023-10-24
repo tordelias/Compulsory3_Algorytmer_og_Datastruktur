@@ -1,2 +1,9 @@
 ﻿  Compulsory3_Trees_and_Graphs.cpp
+C:\Github\Github\Compulsory3_Algorytmer_og_Datastruktur\Compulsory3_Trees_and_Graphs\Compulsory3_Trees_and_Graphs\Graph.h(144,39): warning C4267: '+=': conversion from 'size_t' to 'int', possible loss of data
+C:\Github\Github\Compulsory3_Algorytmer_og_Datastruktur\Compulsory3_Trees_and_Graphs\Compulsory3_Trees_and_Graphs\Graph.h(162,28): warning C4267: 'return': conversion from 'size_t' to 'int', possible loss of data
+  Graph.cpp
+C:\Github\Github\Compulsory3_Algorytmer_og_Datastruktur\Compulsory3_Trees_and_Graphs\Compulsory3_Trees_and_Graphs\Graph.h(144,39): warning C4267: '+=': conversion from 'size_t' to 'int', possible loss of data
+C:\Github\Github\Compulsory3_Algorytmer_og_Datastruktur\Compulsory3_Trees_and_Graphs\Compulsory3_Trees_and_Graphs\Graph.h(162,28): warning C4267: 'return': conversion from 'size_t' to 'int', possible loss of data
+  Tree.cpp
+  Generating Code...
   Compulsory3_Trees_and_Graphs.vcxproj -> C:\Github\Github\Compulsory3_Algorytmer_og_Datastruktur\Compulsory3_Trees_and_Graphs\x64\Debug\Compulsory3_Trees_and_Graphs.exe

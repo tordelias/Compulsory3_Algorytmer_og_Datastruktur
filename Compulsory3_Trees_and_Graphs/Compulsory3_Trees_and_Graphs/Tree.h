@@ -155,6 +155,16 @@ public:
 
 		delete node;
 	}
+	Node* getRoot(struct Node* node)
+	{
+		while (node->parent != nullptr)
+		{
+			node = node->parent;
+		}
+
+		return node;
+
+	}
 
 };
 
