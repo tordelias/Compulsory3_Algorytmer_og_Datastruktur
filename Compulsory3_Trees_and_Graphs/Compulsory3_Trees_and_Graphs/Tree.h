@@ -42,6 +42,7 @@ public:
 				listOfChildren(*it);
 				cout << " " << (*it)->data;
 				++it;
+				//depth pre order
 			}
 		}
 	}
