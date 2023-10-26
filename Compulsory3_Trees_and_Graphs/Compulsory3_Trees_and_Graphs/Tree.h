@@ -141,20 +141,49 @@ public:
 		return NULL;
 
 	}
-	void deleteNode(struct Node* node)
+	void deleteNode(Node* node)
 	{
+		Node* child; 
 		if (node == nullptr)
 			return;
-		else if (node->parent != nullptr)
-			node->parent->children.remove(node);
 
-		for (Node* child : node->children)
+		while (!node->children.empty())
 		{
+			child = node->children.front();
+			node->children.pop_front();
 			deleteNode(child);
 		}
 
+		if (node->parent != nullptr)
+		{
+			node->parent->children.remove(node);
+		}
 		delete node;
 	}
+	//void callthisdeleteplease(Node* node)
+	//{
+	//	if (node->parent != nullptr)
+	//	{
+	//		node->parent->children.remove(node);
+	//	}
+	//	deleteNode(node);
+	//}
+
+	//void deleteNode(Node* node)
+	//{
+	//	if (node == nullptr)
+	//		return;
+
+
+	//	for (Node* child : node->children)
+	//	{
+	//		deleteNode(child);
+	//	}
+
+	//	delete node;
+	//}
+
+
 	Node* getRoot(struct Node* node)
 	{
 		while (node->parent != nullptr)
@@ -165,6 +194,8 @@ public:
 		return node;
 
 	}
+
+
 
 };
 
