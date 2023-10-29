@@ -114,11 +114,14 @@ public:
 		else
 			return false;
 	}
-	int parentOfNode(struct Node* node)
+	Node* parentOfNode(struct Node* node)
 	{
 
 		if (node->parent != nullptr)
-			return node->parent->data;
+		{
+			cout << node->parent->data;
+			return node->parent;
+		}
 		else
 			cout << "root\n";
 		return NULL;
